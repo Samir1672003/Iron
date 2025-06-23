@@ -1,0 +1,10 @@
+<svg width="120" height="60" viewBox="0 0 120 60" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <defs>
+    <linearGradient id="flameGradient" x1="0" y1="0" x2="120" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffcc00"></stop>
+      <stop offset="50%" stop-color="#ff6600"></stop>
+      <stop offset="100%" stop-color="#cc0000"></stop>
+    </linearGradient>
+  </defs>
+  <path d="M0 25 H90 L70 10 M90 25 L70 40" stroke="url(#flameGradient)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>

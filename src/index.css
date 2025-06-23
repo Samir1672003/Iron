@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap");
+@import "tailwindcss";
+
+@font-face {
+  font-family: h1;
+  src: url(./assets/fonts/daaCSScvJGqLYhG8nNt8KPPswUAPni7TTMw.woff2);
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  scrollbar-color: red;
+}
+
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+  background: rgb(66, 66, 66);
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #5a0700;
+  border-radius: 6px;
+}
+
+h1,
+h2,
+h3,
+h4,
+footer {
+  font-family: h1;
+}
+
+body {
+  scroll-behavior: smooth;
+  background-color: black;
+  color: #c4ae78 !important;
+  font-size: clamp(1rem, 1vw + 0.5rem, 1.25rem);
+  border: 1px solid #62351f;
+}
+
+ul li:hover a {
+  text-shadow: 0 0 15px #99774c, 0px -5px 20px #a17e51, 0 5px 20px #96744a;
+  background-color: transparent;
+  color: #ffffff !important;
+}
+
+section {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.section5 {
+  background-image: url(./assets/Images/bgimg.jpg) !important;
+  position: static !important;
+}
+
+.section8{
+
+  background-image:url(./assets/Images/bgimgroom.jpg) !important ;
+    position: static !important;
+    background-size: fill;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.section2::before {
+  background: none !important;
+  z-index: 1;
+}
+
+section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(./assets/Images/backgroundpattern.png);
+  z-index: -1;
+  pointer-events: none;
+}
+footer {
+  padding-bottom: 0;
+  position: relative;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(./assets/Images/backgroundpattern.png);
+  background-size: contain;
+  background-position: center;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.container {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+hr {
+  position: relative;
+  height: 55px;
+  border: none;
+  width: 100%;
+
+  margin: -18px 0;
+}
+
+#tsparticles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+hr::before {
+  content: "";
+  background: url("./assets/Images/divider.png") repeat-x 50% 0;
+  height: 55px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 30;
+}
+.iframe-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.iframe-wrapper iframe {
+  width: 100%;
+  display: block;
+  border: none;
+}
+
+.iframe-wrapper::before {
+  content: "";
+  background: url(./assets/Images/frame.png) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 30;
+  pointer-events: none;
+}
+.iframe-wrapper::after {
+  content: "";
+  background: url(./assets/Images/frame.png) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.iframe-toplayer {
+  position: relative;
+  width: 100%;
+}
+
+.iframe-toplayer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 18px;
+  background: url("./assets/Images/framevertical.png") no-repeat;
+  background-size: cover;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.iframe-toplayer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 18px;
+  background: url("./assets/Images/framevertical.png") no-repeat;
+  background-size: cover;
+  z-index: 10;
+  pointer-events: none;
+}
+
+h1 {
+  font-size: clamp(2rem, 2.5vw + 1rem, 3rem);
+}
+h2 {
+  font-size: clamp(1.75rem, 2vw + 1rem, 2.5rem);
+}
+
+h3 {
+  font-size: clamp(1.5rem, 1.5vw + 0.5rem, 2rem);
+}
+
+h4 {
+  font-size: clamp(1.25rem, 1vw + 0.5rem, 1.5rem);
+}
+
+@media (max-width: 1024px) {
+  section {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+@media (max-width: 768px) {
+  section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  footer {
+    padding-top: 4rem;
+  }
+}
+
+@media (max-width: 425px) {
+  section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  footer {
+    padding-top: 0rem;
+    padding-bottom: 0;
+  }
+}
